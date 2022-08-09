@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class BlogPage extends StatefulWidget {
   const BlogPage({super.key});
@@ -10,12 +7,11 @@ class BlogPage extends StatefulWidget {
   State<BlogPage> createState() => _BlogPageState();
 }
 
-//Using AutomaticKeepAliveClientMixin didnt auto scroll to top in listview when navigate items from bottomnav bar chagned
 class _BlogPageState extends State<BlogPage>
     with AutomaticKeepAliveClientMixin {
   @override
   Widget build(BuildContext context) {
-    super.build(context); //use this with automatic persist
+    super.build(context);
     return Scaffold(
         backgroundColor: Colors.grey[300],
         appBar: AppBar(
@@ -36,8 +32,7 @@ class _BlogPageState extends State<BlogPage>
                             style: TextStyle(
                                 fontSize: 22, fontWeight: FontWeight.bold),
                           ),
-                          Text(
-                              "body of blog dfadsf dfasdfsd dsfsdf dfsadfsdfsdfsdf dsfsdf dfsdfsdf  dfsdfadf dfad"),
+                          Text("body of blog Lorem Ipsum Lorem Ipsum is here"),
                         ],
                       ),
                     ),
